@@ -12,10 +12,8 @@ define([
       '*actions': 'index'      
       },
       
-      index: function(){
-      	// We have no matching route, lets display the home page 
-      	var homeView = new HomeView();
-      	homeView.render();
+      index: function(){      	
+      	$('#container').html(new HomeView().render().el);
       }
   });
   
