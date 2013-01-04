@@ -16,7 +16,6 @@ define([
 		},
 		
   		render: function(ctx){
-  			//TODO Create new model and use its default properties
   			ctx.beginPath();
   			ctx.fillStyle = this.c;
   			ctx.arc(this.x, this.y, this.r, 0, Math.PI*2, false);
